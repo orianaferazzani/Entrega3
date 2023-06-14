@@ -1,0 +1,33 @@
+@import 'content/colores';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import 'content/medidas-pprincipal';
+//pag principal
+body{
+    background-color:$fondo;
+    font-family: 'Roboto';
+}
+.encabezado{
+    background-color:$rojo;
+    color:$amarillo;
+}
+.saludo p {
+    margin: 15px;
+    text-align: center;
+    color:$rojo;
+}
+.animacion {
+    animation: moveText 4s infinite;
+  }
+  
+  @keyframes moveText {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(40px);
+    }
+    75% {
+      transform: translateX(-40px);
+    }
+  }
+  

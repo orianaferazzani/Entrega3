@@ -1,0 +1,33 @@
+.imgenvio{
+    border-radius: 50%;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 700px;;
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .imgenvio{
+        width: 85%;
+    }
+    .img{
+        width: 75%;
+    }
+
+    .video {
+      width: 85%;
+    }
+  }
