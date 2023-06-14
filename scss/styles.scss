@@ -1,11 +1,16 @@
 @import 'content/colores';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import 'content/medidas-pprincipal';
-//pag principal
-body{
-    background-color:$fondo;
-    font-family: 'Roboto';
+@import 'content/footer';
+@import 'content/animaciones';
+@import 'content/fondos';
+
+h1{
+    font-family:'Josefin Sans', sans-serif ;
 }
+
+//pag principal
+
 .encabezado{
     background-color:$rojo;
     color:$amarillo;
@@ -15,19 +20,82 @@ body{
     text-align: center;
     color:$rojo;
 }
-.animacion {
-    animation: moveText 4s infinite;
+.imgenvio{
+    border-radius: 50%;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 700px;;
+    height: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .imgenvio{
+        width: 85%;
+    }
+    .img{
+        width: 75%;
+    }
+
+    .video {
+      width: 85%;
+    }
   }
-  
-  @keyframes moveText {
-    0%, 100% {
-      transform: translateX(0);
+
+//pag de contacto
+.containerContacto{
+    margin: 50px auto;
+    width: 70%;
+    padding: 30px;
+    background:rgba(157, 19, 19, 0.5);
+    border-radius: 10px;
+    h1{
+        text-align: center;
+        color: #fff;
+      }
+}
+.form-group{
+    label{
+        color: rgb(255, 255, 255); 
     }
-    25% {
-      transform: translateX(40px);
+    input{
+        width: 100%;
+        padding: 10px 0 ;
+        color: aliceblue;
+        background: transparent ;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px;  
     }
-    75% {
-      transform: translateX(-40px);
+    textarea{
+        width: 100%;
+        padding: 10px 0 ;
+        color: aliceblue;
+        background: transparent ;
+        border: none;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 20px; 
     }
-  }
-  
+}
+.btn{
+    background-color: rgb(238, 203, 158);
+    border:none;
+    letter-spacing: 5px; /*para que las letras esten mas separadas*/
+    text-transform: uppercase; /*todo se convierte en mayuscula */
+    cursor: pointer; /*el cursor cambia a una manito*/
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
+}

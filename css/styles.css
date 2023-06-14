@@ -1,4 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.footer {
+  padding: 20px 0;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.mail:link, .mail:visited, .mail:hover, .mail:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+}
+
+.animacion1 {
+  animation: moveText 4s infinite;
+}
+
+@keyframes moveText {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(40px);
+  }
+  75% {
+    transform: translateX(-40px);
+  }
+}
+body {
+  background: linear-gradient(rgba(215, 9, 30, 0.893), rgba(237, 213, 34, 0.474));
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.encabezado {
+  background-color: rgba(215, 9, 30, 0.893);
+  color: rgb(240, 226, 32);
+}
+
+.saludo p {
+  margin: 15px;
+  text-align: center;
+  color: rgba(215, 9, 30, 0.893);
+}
+
 .imgenvio {
   border-radius: 50%;
   width: 400px;
@@ -33,36 +98,49 @@
     width: 85%;
   }
 }
-body {
-  background-color: rgba(237, 213, 34, 0.474);
-  font-family: "Roboto";
+.containerContacto {
+  margin: 50px auto;
+  width: 70%;
+  padding: 30px;
+  background: rgba(157, 19, 19, 0.5);
+  border-radius: 10px;
 }
-
-.encabezado {
-  background-color: rgba(215, 9, 30, 0.893);
-  color: rgb(240, 226, 32);
-}
-
-.saludo p {
-  margin: 15px;
+.containerContacto h1 {
   text-align: center;
-  color: rgba(215, 9, 30, 0.893);
+  color: #fff;
 }
 
-.animacion {
-  animation: moveText 4s infinite;
+.form-group label {
+  color: rgb(255, 255, 255);
+}
+.form-group input {
+  width: 100%;
+  padding: 10px 0;
+  color: aliceblue;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
+}
+.form-group textarea {
+  width: 100%;
+  padding: 10px 0;
+  color: aliceblue;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 20px;
 }
 
-@keyframes moveText {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(40px);
-  }
-  75% {
-    transform: translateX(-40px);
-  }
+.btn {
+  background-color: rgb(238, 203, 158);
+  border: none;
+  letter-spacing: 5px; /*para que las letras esten mas separadas*/
+  text-transform: uppercase; /*todo se convierte en mayuscula */
+  cursor: pointer; /*el cursor cambia a una manito*/
+  padding: 15px;
+  margin-top: 30px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
