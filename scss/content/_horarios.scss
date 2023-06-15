@@ -1,0 +1,25 @@
+.opening-hours {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    h2{
+      font-size: 24px;
+      margin-bottom: 10px; 
+    }
+    table{
+        margin: 0 auto;
+        tr :not(:last-child){
+            border-bottom: 1px solid #cf1616;
+
+        } 
+        tr:last-child {
+            font-weight: bold;
+            color:$rojo;
+          }
+          tr{
+            td:last-child {
+                text-align: left;
+              }
+          }
+    }
+  }

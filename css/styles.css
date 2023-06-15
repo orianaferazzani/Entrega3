@@ -38,10 +38,10 @@
     transform: translateX(0);
   }
   25% {
-    transform: translateX(40px);
+    transform: translateX(20px);
   }
   75% {
-    transform: translateX(-40px);
+    transform: translateX(-20px);
   }
 }
 body {
@@ -49,8 +49,31 @@ body {
   font-family: "Roboto";
 }
 
+.opening-hours {
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.opening-hours h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.opening-hours table {
+  margin: 0 auto;
+}
+.opening-hours table tr :not(:last-child) {
+  border-bottom: 1px solid #cf1616;
+}
+.opening-hours table tr:last-child {
+  font-weight: bold;
+  color: rgba(215, 9, 30, 0.893);
+}
+.opening-hours table tr td:last-child {
+  text-align: left;
+}
+
 h1 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "josefin sans";
 }
 
 .encabezado {
@@ -141,6 +164,38 @@ h1 {
   padding: 15px;
   margin-top: 30px;
   width: 100%;
+}
+
+.titl {
+  color: #fff;
+  text-align: center;
+}
+
+.mapa {
+  border-radius: 20px;
+  width: 70%;
+}
+
+.producto {
+  border: 2px rgba(54, 53, 53, 0.675) solid;
+}
+
+.search-container input[type=text] {
+  padding: 5px 60px;
+  font-size: 14px;
+  background-color: transparent;
+}
+
+.search-button {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  color: rgba(210, 192, 192, 0.536);
+  background-color: transparent;
+}
+.search-button:hover {
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=styles.css.map */

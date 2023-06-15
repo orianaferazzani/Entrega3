@@ -4,13 +4,11 @@
 @import 'content/footer';
 @import 'content/animaciones';
 @import 'content/fondos';
+@import'content/horarios';
 
 h1{
-    font-family:'Josefin Sans', sans-serif ;
+    font-family: 'josefin sans';
 }
-
-//pag principal
-
 .encabezado{
     background-color:$rojo;
     color:$amarillo;
@@ -99,3 +97,41 @@ h1{
     margin-top: 30px;
     width: 100%;
 }
+//mixin
+@mixin titulos{
+    color: #fff;
+    text-align: center;
+}
+
+//locales
+.titl{
+ @include titulos
+}
+.mapa{
+    border-radius: 20px;
+    width: 70%;
+}
+
+//productos
+.producto{
+    border: 2px rgba(54, 53, 53, 0.675) solid;
+
+}
+.search-container {
+    input[type="text"] {
+      padding: 5px 60px;
+      font-size: 14px;
+      background-color: transparent;
+    }
+}
+.search-button {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    color: rgba(210, 192, 192, 0.536);
+    background-color: transparent;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
